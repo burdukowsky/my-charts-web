@@ -1,0 +1,15 @@
+@import "src/scss/vars";
+
+.list {
+  .item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &.itemActive {
+      font-weight: bold;
+      background-color: $primary;
+      color: white;
+    }
+  }
+}

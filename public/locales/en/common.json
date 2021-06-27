@@ -2,5 +2,6 @@
   "signIn": "Sign in",
   "signOut": "Sign out",
   "signOutConfirm": "Sign out?",
-  "404": "Page not found"
+  "404": "Page not found",
+  "ok": "OK"
 }

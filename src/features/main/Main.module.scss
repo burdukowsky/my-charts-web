@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+
+  .chartList {
+    flex-basis: 20%;
+  }
+
+  .chart {
+    flex-basis: 60%;
+  }
+
+  .data {
+    flex-basis: 20%;
+  }
+}

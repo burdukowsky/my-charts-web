@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { localStorageService } from 'app/services/LocalStorageService';
-import { Lang } from 'app/models/lang';
+import { Lang } from 'app/models/Lang';
 
 export const LangSelector: React.FC = () => {
   const { i18n } = useTranslation();

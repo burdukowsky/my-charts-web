@@ -10,8 +10,9 @@ i18n
   .init({
     fallbackLng: 'ru',
     lng: localStorageService.getLang(),
-    ns: ['common'],
+    ns: ['common', 'main'],
     defaultNS: 'common',
+    fallbackNS: 'common',
     interpolation: {
       escapeValue: false
     },

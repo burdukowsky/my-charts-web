@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { NavLink } from './nav-link/NavLink';
 import useAuth from 'app/hooks/useAuth';
 import { LangSelector } from 'app/components/lang-selector/LangSelector';
 
