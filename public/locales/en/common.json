@@ -1,10 +1,6 @@
 {
-  "home": "Home",
-  "dashboard": "Dashboard",
-  "users": "Users",
   "signIn": "Sign in",
   "signOut": "Sign out",
   "signOutConfirm": "Sign out?",
-  "requestFailed": "Request failed",
   "404": "Page not found"
 }

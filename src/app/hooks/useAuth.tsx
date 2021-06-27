@@ -1,40 +1,21 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
-import { useLocalStorage } from './useLocalStorage';
-import { LS_USER } from 'app/globals/ls-keys';
+import { localStorageService } from 'app/services/LocalStorageService';
 
 interface AuthContextValue {
-  user: User | null;
-  signIn: (email: string, password: string) => Promise<User>;
-  signOut: () => Promise<void>;
+  user: string | null;
+  signIn: (user: string) => void;
+  signOut: () => void;
 }
 
 function useProvideAuth(): AuthContextValue {
-  const [user, setUser] = useLocalStorage<User | null>(LS_USER);
-
-  const signIn = (email: string, password: string): Promise<User> => {
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        const userMock: User = { id: 1, email: 'user@example.com' };
-        setUser(userMock);
-        resolve(userMock);
-      }, 500)
-    );
-  };
-
-  const signOut = (): Promise<void> => {
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        setUser(null);
-        resolve();
-      }, 500)
-    );
-  };
+  const [user, setUser] = useState<string | null>(localStorageService.getUser());
+  useEffect(() => localStorageService.setUser(user), [user]);
 
   return {
     user,
-    signIn,
-    signOut
+    signIn: user => setUser(user),
+    signOut: () => setUser(null),
   };
 }
 
