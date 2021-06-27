@@ -1,25 +1,6 @@
-# react-starter
+# my-charts-web
 
-Стартовый шаблон приложения React, основанный на `cra-template-redux-typescript`.
-
-Изменения:
-
-* Добавлены правила `.gitignore` для IDE
-* Добавлен `.env` (указан порт для dev-server)
-* Добавлен `.editorconfig`
-* SCSS (Dart Sass)
-* Строгий ESLint (`eslintConfig` перенесен из `package.json` в `.eslintrc.json`)
-* Роутинг (Reach Router)
-* Авторизация
-* Подключен [classnames](https://www.npmjs.com/package/classnames)
-* `hooks.ts` переименован в `reduxHooks.ts`
-* Добавлены хуки `useAuth` и `useLocalStorage` (`src/app/hooks`)
-* Добавлена директория с типами (`types`)
-* Абсолютные импорты
-* Ленивая загрузка модулей (`MainLayout` и `LoginLayout`)
-* I18n (`i18next`, `react-i18next`, `i18next-http-backend`)
-* Добавлен файл внешней конфигурации (`public/config.js`)
-* Подключен [axios](https://www.npmjs.com/package/axios)
+Веб-приложение для создания и просмотра различных графиков.
 
 ## Available Scripts
 
@@ -32,12 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
-information.
 
 ### `npm run build`
 
